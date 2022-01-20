@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.javaex.dao.GuestbookDao;
+import com.javaex.dao.GuestbookDao2;
 import com.javaex.vo.GuestbookVo;
 
 @Controller
@@ -17,7 +17,7 @@ import com.javaex.vo.GuestbookVo;
 public class GuestbookController {
 	
 	@Autowired
-	private GuestbookDao gd;
+	private GuestbookDao2 gd;
 	
 	
 	@RequestMapping("/list")
@@ -57,4 +57,5 @@ public class GuestbookController {
 
 		return "redirect:/guest/list";
 	}
+	
 }
